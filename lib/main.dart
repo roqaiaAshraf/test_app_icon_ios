@@ -7,6 +7,7 @@ void main() {
 
 enum IOSAppIcons {
   backToSchoolIcon('BackToSchool'),
+  defaultIcon('AppIcon'),
   spring('Spring');
 
   final String appIcon;
@@ -34,7 +35,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String _currentIcon = 'Day';
+  String _currentIcon = 'Default';
 
   @override
   void initState() {
@@ -47,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     if (mounted) {
       setState(() {
-        _currentIcon = iconName == 'NightIcon' ? 'Night' : 'Day';
+        _currentIcon = iconName;
       });
     }
   }
@@ -56,7 +57,29 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary),
-      body: Center(child: Text('Current icon: $_currentIcon')),
+      body: Column(
+        children: [
+          Center(child: Text('Current icon: $_currentIcon')),
+          FloatingActionButton(
+            onPressed: () async {
+              await DynamicIconService.setIcon(iconName: IOSAppIcons.spring.appIcon);
+            },
+            child: Text('Spring Icon', style: TextStyle(color: Colors.blue)),
+          ),
+          FloatingActionButton(
+            onPressed: () async {
+              await DynamicIconService.setIcon(iconName: IOSAppIcons.backToSchoolIcon.appIcon);
+            },
+            child: Text('back to school Icon', style: TextStyle(color: Colors.blue)),
+          ),
+          FloatingActionButton(
+            onPressed: () async {
+              await DynamicIconService.setIcon(iconName: IOSAppIcons.defaultIcon.appIcon);
+            },
+            child: Text('default Icon', style: TextStyle(color: Colors.blue)),
+          ),
+        ],
+      ),
     );
   }
 }
