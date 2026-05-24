@@ -47,11 +47,33 @@
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
 		331C807B294A618700263BE5 /* RunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerTests.swift; sourceTree = "<group>"; };
-		FA0000011CF90000FA000001 /* Spring@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spring@2x.png"; sourceTree = "<group>"; };
-		FA0000021CF90000FA000002 /* Spring@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spring@3x.png"; sourceTree = "<group>"; };
+		FA1000011CF90000FA100001 /* Spring@2x.png */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.png;
+		path = "Spring@2x.png";
+		sourceTree = "<group>";
+		};
 
-		FA0000031CF90000FA000003 /* BackToSchool@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackToSchool@2x.png"; sourceTree = "<group>"; };
-		FA0000041CF90000FA000004 /* BackToSchool@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackToSchool@3x.png"; sourceTree = "<group>"; };
+		FA1000021CF90000FA100002 /* Spring@3x.png */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.png;
+		path = "Spring@3x.png";
+		sourceTree = "<group>";
+		};
+
+		FA1000031CF90000FA100003 /* BackToSchool@2x.png */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.png;
+		path = "BackToSchool@2x.png";
+		sourceTree = "<group>";
+		};
+
+		FA1000041CF90000FA100004 /* BackToSchool@3x.png */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.png;
+		path = "BackToSchool@3x.png";
+		sourceTree = "<group>";
+		};
 		331C8081294A63A400263BE5 /* RunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
